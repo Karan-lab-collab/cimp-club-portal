@@ -18,9 +18,9 @@ export default function AssignRoles() {
 
   const loadData = async () => {
     const [clubRes, studentRes, facultyRes] = await Promise.all([
-      axios.get("http://localhost:3000/api/clubs"),
-      axios.get("http://localhost:3000/api/students"),
-      axios.get("http://localhost:3000/api/faculty"),
+      axios.get("http://cimp-club-portal.onrender.com/api/clubs"),
+      axios.get("http://cimp-club-portal.onrender.com/api/students"),
+      axios.get("http://cimp-club-portal.onrender.com/api/faculty"),
     ]);
 
     setClubs(clubRes.data);
@@ -50,7 +50,7 @@ export default function AssignRoles() {
     );
 
     try {
-      await axios.put("http://localhost:3000/api/clubs", updatedClubs);
+      await axios.put("http://cimp-club-portal.onrender.com/api/clubs", updatedClubs);
       setClubs(updatedClubs);
       setStatus("✅ Roles updated successfully!");
     } catch {

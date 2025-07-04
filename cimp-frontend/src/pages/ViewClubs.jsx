@@ -10,7 +10,7 @@ export default function ViewClubs() {
 
   const fetchClubs = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/api/clubs");
+      const res = await axios.get("http://cimp-club-portal.onrender.com/api/clubs");
       let allClubs = res.data;
 
       if (user.role === "president") {
@@ -33,7 +33,7 @@ export default function ViewClubs() {
   const deleteClub = async (clubName) => {
     if (!window.confirm(`Are you sure you want to delete "${clubName}"?`)) return;
     try {
-      await axios.delete(`http://localhost:3000/api/clubs/${encodeURIComponent(clubName)}`);
+      await axios.delete(`http://cimp-club-portal.onrender.com/api/clubs/${encodeURIComponent(clubName)}`);
       fetchClubs();
     } catch {
       alert("Failed to delete club");
