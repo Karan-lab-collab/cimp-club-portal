@@ -25,6 +25,9 @@ export default function Login() {
       setError("Invalid credentials or not assigned role");
     }
   };
+  useEffect(() => {
+  axios.get(`${import.meta.env.VITE_API_URL}/api/ping`).catch(() => {});
+}, []);
 
   return (
     <div className="login-wrapper">
