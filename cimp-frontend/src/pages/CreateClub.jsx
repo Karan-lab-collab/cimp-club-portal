@@ -22,8 +22,8 @@ export default function CreateClub() {
       return;
     }
 
-    axios.get("http://cimp-club-portal.onrender.com/api/students").then(res => setStudents(res.data));
-    axios.get("http://cimp-club-portal.onrender.com/api/faculty").then(res => setFaculty(res.data));
+    axios.get("https://cimp-club-portal.onrender.com/api/students").then(res => setStudents(res.data));
+    axios.get("https://cimp-club-portal.onrender.com/api/faculty").then(res => setFaculty(res.data));
   }, []);
 
   const handleMemberToggle = (reg) => {
@@ -42,7 +42,7 @@ export default function CreateClub() {
     }
 
     try {
-      await axios.post("http://cimp-club-portal.onrender.com/api/clubs", {
+      await axios.post("https://cimp-club-portal.onrender.com/api/clubs", {
         name: clubName,
         description,
         category,

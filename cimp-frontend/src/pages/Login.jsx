@@ -13,7 +13,7 @@ export default function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://cimp-club-portal.onrender.com/api/login", {
+      const res = await axios.post("https://cimp-club-portal.onrender.com/api/login", {
         role,
         username,
         password,
@@ -25,9 +25,7 @@ export default function Login() {
       setError("Invalid credentials or not assigned role");
     }
   };
-  useEffect(() => {
-  axios.get(`${import.meta.env.VITE_API_URL}/api/ping`).catch(() => {});
-}, []);
+
 
   return (
     <div className="login-wrapper">

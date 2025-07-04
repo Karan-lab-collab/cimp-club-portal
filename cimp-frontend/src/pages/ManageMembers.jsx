@@ -12,7 +12,7 @@ export default function ManageMembers() {
   const [status, setStatus] = useState("");
 
   useEffect(() => {
-    axios.get("http://cimp-club-portal.onrender.com/api/clubs").then((res) => {
+    axios.get("https://cimp-club-portal.onrender.com/api/clubs").then((res) => {
       if (user.role === "admin") {
         setClubs(res.data);
       } else if (user.role === "president") {
@@ -20,7 +20,7 @@ export default function ManageMembers() {
       }
     });
 
-    axios.get("http://cimp-club-portal.onrender.com/api/students").then((res) => {
+    axios.get("https://cimp-club-portal.onrender.com/api/students").then((res) => {
       setStudents(res.data);
     });
   }, []);
@@ -38,7 +38,7 @@ export default function ManageMembers() {
     });
 
     try {
-      await axios.put("http://cimp-club-portal.onrender.com/api/clubs", updatedClubs);
+      await axios.put("https://cimp-club-portal.onrender.com/api/clubs", updatedClubs);
       setClubs(updatedClubs);
       setStatus(`✅ Member ${mode === "add" ? "added" : "removed"} successfully.`);
     } catch {
