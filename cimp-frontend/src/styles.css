@@ -206,6 +206,7 @@ form button:hover {
 
 .create-club-container {
   background-color: white;
+  
   padding: 2rem;
   border-radius: 8px;
   width: 100%;
@@ -289,6 +290,8 @@ form button:hover {
 }
 
 .view-container {
+  display: flex;
+  justify-content: center;
   background-color: white;
   padding: 2rem;
   border-radius: 8px;
@@ -373,6 +376,8 @@ form button:hover {
 
 /*manage members*/
 .manage-members-wrapper {
+  display: flex;
+  justify-content: center;
   max-width: 800px;
   margin: 2rem auto;
   padding: 2rem;
@@ -435,7 +440,7 @@ form button:hover {
 
 .manage-members-wrapper {
   display: flex;
-  justify-content: flex-start; /* centers horizontally */
+  justify-content: center; /* centers horizontally */
   align-items: center;
   min-height: 100vh;
   background-color: #f4f6f8;
