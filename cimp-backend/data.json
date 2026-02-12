@@ -2,20 +2,20 @@
   "students": [
     {
       "name": "Karan Mittal",
-      "reg": "22BCE9999",
+      "reg": "24BRS1147",
       "password": "karan123"
     },
     {
-      "name": "Amit Sharma",
-      "reg": "22BCE1001",
-      "password": "amit123"
+      "name": "Arnav Singh Thakur",
+      "reg": "24BRS1053",
+      "password": "arnav123"
     }
   ],
   "faculty": [
     {
-      "name": "Dr. Smitha Rao",
+      "name": "Dr. Nivethitha S.",
       "id": "FAC101",
-      "password": "smitha@123"
+      "password": "nivethitha@123"
     }
   ],
   "clubs": [
@@ -23,11 +23,11 @@
       "name": "Tech Club",
       "description": "A club for tech enthusiasts",
       "category": "Technical",
-      "president": "22BCE1001",
+      "president": "24BRS1053",
       "faculty": "FAC101",
       "members": [
-        "22BCE1001",
-        "22BCE9999"
+        "24BRS1053",
+        "2$BRS1147"
       ],
       "pendingRequests": []
     }
