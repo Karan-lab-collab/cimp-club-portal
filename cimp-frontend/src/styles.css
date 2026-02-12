@@ -290,8 +290,6 @@ form button:hover {
 }
 
 .view-container {
-  display: flex;
-  justify-content: center;
   background-color: white;
   padding: 2rem;
   border-radius: 8px;
